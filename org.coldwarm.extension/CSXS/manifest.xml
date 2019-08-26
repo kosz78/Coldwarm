@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="4.0" ExtensionBundleId="org.coldwarm.extension" ExtensionBundleVersion="1.4.0"
+		ExtensionBundleName="ColdWarm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="org.coldwarm.extension" Version="1.4.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<!-- Photoshop -->
+			<Host Name="PHXS" Version="[16.0,99.9]" />
+			<Host Name="PHSP" Version="[16.0,99.9]" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="6.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="org.coldwarm.extension">
+			<DispatchInfo >
+				<Resources>
+					<MainPath>./index.html</MainPath>
+					<ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>ColdWarm</Menu>
+					<Geometry>
+						<Size>
+							<Height>500</Height>
+							<Width>500</Width>
+						</Size>
+						<MaxSize>
+							<Height>600</Height>
+							<Width>600</Width>
+						</MaxSize>
+					</Geometry>
+					<Icons>
+						<Icon Type="Normal">./icons/active.png</Icon>
+						<Icon Type="RollOver">./icons/over.png</Icon>
+						<Icon Type="Disabled">./icons/disabled.png</Icon>
+						<Icon Type="DarkNormal">./icons/active.png</Icon>
+						<Icon Type="DarkRollOver">./icons/over.png</Icon>
+					</Icons>					
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
